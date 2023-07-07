@@ -4,7 +4,11 @@
 // - another function call
 // - additional variables
 pub fn bigger(a: i32, b: i32) -> i32 {
-    todo!()
+    if a > b {
+        a
+    } else {
+        b
+    }
 }
 
 //Exercise 2
@@ -48,7 +52,6 @@ fn factorial(n: u32) -> u32 {
 fn is_prime(n: u32) -> bool {
     todo!()
 }
-
 
 // Don't mind this for now :)
 #[cfg(test)]
@@ -143,6 +146,4 @@ mod tests {
         assert_eq!(is_prime(10), false);
         assert_eq!(is_prime(15), false);
     }
-
-
 }
